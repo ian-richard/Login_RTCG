@@ -19,10 +19,10 @@ const emailReducer = (state, action) => {
 
 const passwordReducer = (state, action) => {
   if (action.type === 'USER_INPUT'){
-    return {value: action.val, isValid: action.val.trim().length > 1};
+    return {value: action.val, isValid: action.val.trim().length > 3};
   }
   if (action.type === 'INPUT_BLUR'){
-    return {value: state.value, isValid: state.value.trim().length > 1}
+    return {value: state.value, isValid: state.value.trim().length > 3}
   }
   return { 
     value: '', 
