@@ -12,7 +12,7 @@ const Home = (props) => {
 
   return (
     <Card className={classes.home}>
-      <h1>Welcome back!</h1>
+      <h1>Welcome to the app!</h1>
       <Button onClick={authCtx.onLogout}>Logout</Button>
     </Card>
   );
